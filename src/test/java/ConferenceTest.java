@@ -23,5 +23,15 @@ public class ConferenceTest {
         assertEquals(3, conference.roomCount());
     }
 
+    @Test
+    public void testGetRoomType() {
+        assertEquals("Classroom", conference.getRoomType());
+    }
+
+    @Test
+    public void testArraySize() {
+        assertEquals(3, conference.getArraySize());
+    }
+
 }
 

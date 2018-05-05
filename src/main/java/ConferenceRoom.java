@@ -14,4 +14,20 @@ public class ConferenceRoom extends Room {
     public int roomCount(){
         return rooms.size();
     }
+
+    public ArrayList<String> getRooms() {
+        return rooms;
+    }
+
+    public String getRoomType(){
+        return rooms.get(0);
+    }
+
+    public int getArraySize(){
+        return rooms.size();
+    }
+
+
+
+
 }
