@@ -9,11 +9,11 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(BedroomType.DOUBLE);
+        bedroom = new Bedroom(100, BedroomType.DOUBLE);
     }
 
     @Test
-    public void canGetBedroom(){
+    public void canGetBedroomType(){
         assertEquals(BedroomType.DOUBLE, bedroom.getBedroom());
     }
 }
