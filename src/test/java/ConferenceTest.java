@@ -15,7 +15,7 @@ public class ConferenceTest {
         roomList.add("Classroom");
         roomList.add("Boardroom");
         roomList.add("Theater");
-        conference = new ConferenceRoom(150, roomList);
+        conference = new ConferenceRoom(150, roomList.get(0));
     }
 
     @Test
@@ -26,6 +26,15 @@ public class ConferenceTest {
     @Test
     public void testGetRoomType() {
         assertEquals("Classroom", conference.getRoomType());
+    }
+
+    @Test
+    public void testGetAllRooms(){
+        ArrayList<String> roomList = new ArrayList<>();
+        roomList.add("Classroom");
+        roomList.add("Boardroom");
+        roomList.add("Theater");
+        assertEquals(roomList, conference.getRooms());
     }
 
     @Test

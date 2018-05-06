@@ -3,11 +3,16 @@ import java.util.ArrayList;
 public class ConferenceRoom extends Room {
 
     private ArrayList<String> rooms;
+    private String room;
 
 
-    public ConferenceRoom(int rate, ArrayList<String> rooms) {
+    public ConferenceRoom(int rate, String room) {
         super(rate);
-        this.rooms = rooms;
+        this.room = room;
+        this.rooms = new ArrayList<>();
+        rooms.add("Classroom");
+        rooms.add("Boardroom");
+        rooms.add("Theater");
     }
 
 
@@ -20,7 +25,8 @@ public class ConferenceRoom extends Room {
     }
 
     public String getRoomType(){
-        return rooms.get(0);
+        room = rooms.get(0);
+        return room;
     }
 
     public int getArraySize(){

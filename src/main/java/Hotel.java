@@ -6,8 +6,8 @@ public class Hotel {
 
 
     public Hotel() {
-        this.bedroom = new ArrayList<Guest>();
-        this.conference = new ArrayList<Guest>();
+        this.bedroom = new ArrayList<>();
+        this.conference = new ArrayList<>();
     }
 
     public int bedroomCount(){
