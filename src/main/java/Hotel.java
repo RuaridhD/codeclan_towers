@@ -26,4 +26,11 @@ public class Hotel {
         conference.add(guest);
     }
 
+//    public void getListOfGuestsInBedroom(){
+//        bedroom.
+//    }
+//
+//    public ArrayList<Guest> getBedroom() {
+//        return bedroom;
+//    }
 }
